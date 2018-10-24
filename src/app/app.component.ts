@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ext';
+  storage = browser.storage.local;
+
+  constructor(){
+    console.log(this.storage);
+  }
 }
